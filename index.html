@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Company</title>
+    <style>
+        .logo{
+            animation: spin 60s linear infinite;
+
+        }
+         
+         @keyframes spin {
+            from {
+                transform: rotate(360deg);
+            }
+            to{
+                transform: rotate(0deg);
+            }
+           
+            } 
+             .outerdiv{
+                animation: ringrotate 60s linear infinite;
+            }
+
+            @keyframes ringrotate {
+            from {
+                transform: rotate(-360deg);
+            }
+            to{
+                transform: rotate(0deg);
+            }
+           
+            }  
+
+            .innerlogo{
+                animation: inlogo 20s linear infinite;
+            }
+            @keyframes inlogo {
+            100% {
+                transform: rotate(360deg);
+            }
+          
+            } 
+            .innerdiv{
+                animation: indiv 15s linear infinite;
+            }
+            @keyframes indiv {
+            0% { 
+                transform: rotate(360deg);
+            }
+          
+            } 
+
+            
+
+    </style>
+</head>
+<body>
+    <section class="relative w-full h-full flex justify-center items-center bg-slate-700">
+        <!--CONTAINER CONTAINING WHOLE THINGS-->
+        <div class="relative h-full mx-auto my-20 flex items-center justify-between overflow-hidden px-10 py-10">
+            <!--OUTER CIRCLE-->
+            <div class="relative h-60 w-60 place-content-center border rounded-full border-purple-100 transition-all outerdiv">
+                <img src="./images/google.webp" alt="" height="64px" width="64px" class="absolute left-20 -top-8 logo ">
+                <img src="./images/meta.webp" alt="" height="64px" width="64px" class="absolute top-36 -left-5 logo">
+                <img src="./images/microsoft.webp" alt="" height="64px" width="64px" class="absolute top-8 -right-5 logo">
+                <img src="./images/netflix.webp" alt="" height="64px" width="64px" class="absolute bottom-7 -right-4 logo">
+                <img src="./images/apple.webp" alt="" height="64px" width="64px" class="absolute right-24 -bottom-8 logo">
+                <img src="./images/amazon.webp" alt="" height="64px" width="64px" class="absolute top-10 -left-6 logo">
+                <!--MIDDLE CIRCLE-->
+                <div class="relative top-10 left-10 h-40 w-40 grid place-content-center transition-all rounded-full bg-purple-100">
+                    <!--INNER CIRCLE-->
+                    <div class="h-20 w-20 rounded-full relative bg-violet-200 transition-all innerdiv">
+                        <img src="./images/ola.webp" alt="" height="64px" width="64px" class="absolute left-2 -bottom-8 innerlogo">
+                        <img src="./images/flipkart.webp" alt="" height="64px" width="64px" class="absolute -left-8 bottom-2 innerlogo">
+                        <img src="./images/linkedin.webp" alt="" height="64px" width="64px" class="absolute left-12 bottom-2 innerlogo">
+                        <img src="./images/adobe.webp" alt="" height="64px" width="64px" class="absolute right-2 bottom-12 innerlogo">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
